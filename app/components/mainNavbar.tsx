@@ -10,16 +10,24 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function MainNavbar () {
   return (
     <div className={styles.mainBar}>
-      <Navbar expand='lg' fixed='top' className='bg-body-tertiary'>
-        <Navbar.Brand href='#home'>
+      <Navbar expand='lg' fixed='top' className='bg-body-tertiary' data-bs-theme='dark'>
+        <Navbar.Brand href='#home' className={styles.brand}>
           <img
             alt='ratware rat'
-            src='../ratware-take2.jpg'
+            src='../ratware-logo.png'
             height={100}
             width={100}
           />
+          ratware™
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Nav className={styles.navLinks}>
+          <Nav.Link> home </Nav.Link>
+          <NavDropdown title='products'>
+            <NavDropdown.Item> shirts </NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link> contact </Nav.Link>
+        </Nav>
       </Navbar>
     </div>
   )
