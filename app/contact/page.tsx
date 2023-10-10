@@ -1,22 +1,25 @@
 'use client'
 import styles from 'styles/contact.module.css';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { Container } from 'react-bootstrap';
+import MainNavbar from '../components/mainNavbar';
+import Container from 'react-bootstrap/Container';
 
 export default function Contact() {
   return (
-    <div className={styles.contactLanding}>
-      <div>
+    <div>
+      <MainNavbar />
+      <div className={styles.contactLanding}>
         <div className={styles.formHeader}>
           <span className={styles.headerText}> contact me </span>
         </div>
         <form className={styles.contactForm}>
-          <div className={styles.infoContainer}>
-            <label className={styles.label}> name </label>
-            <input className={styles.input} type='text' />
-            <label className={styles.label}> email </label>
-            <input className={styles.input} type='text' />
+          <div className={styles.logoAndInputContainer}>
+            <div className={styles.infoContainer}>
+              <label className={styles.label}> name </label>
+              <input className={styles.input} type='text' />
+              <label className={styles.label}> email </label>
+              <input className={styles.input} type='text' />
+            </div>
+            <img className={styles.ratwareColorText} src='./ratware-text-color.png' />
           </div>
           <div className={styles.messageContainer}>
             <label className={styles.messageLabel}> message </label>
