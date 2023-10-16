@@ -19,7 +19,7 @@ export default function MainNavbar () {
               height={100}
               width={100}
             />
-            ratware™
+            ratware
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Nav className={styles.navLinks}>

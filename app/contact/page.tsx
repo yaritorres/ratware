@@ -1,7 +1,7 @@
 'use client'
 import styles from 'styles/contact.module.css';
 import MainNavbar from '../components/mainNavbar';
-import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
 export default function Contact() {
   return (
@@ -19,11 +19,14 @@ export default function Contact() {
               <label className={styles.label}> email </label>
               <input className={styles.input} type='text' />
             </div>
-            <img className={styles.ratwareColorText} src='./ratware-text-color.png' />
+            <img className={styles.ratwareColorText} src='./ratware-logo.png' />
           </div>
           <div className={styles.messageContainer}>
             <label className={styles.messageLabel}> message </label>
             <input className={styles.message} type='text' />
+          </div>
+          <div className={styles.sendButton}>
+            <Button variant='dark' > send </Button>
           </div>
         </form>
       </div>

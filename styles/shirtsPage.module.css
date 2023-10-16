@@ -1,14 +1,15 @@
-.main {
+.shirtsMain {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.landing {
+.shirtsLanding {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: rgb(83, 93, 103);
   padding: 2%;
   min-width: 100vw;
