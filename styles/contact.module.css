@@ -1,10 +1,10 @@
 .contactLanding {
-  min-height: 100%;
+  min-height: 87.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-top: 6%;
+  background-color: rgb(83, 93, 103);
 }
 
 .formHeader {
@@ -22,8 +22,8 @@
 
 .headerText {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 22px;
-  padding-left: 4%;
+  font-size: 30px;
+  padding-left: 5%;
 }
 
 .contactForm {

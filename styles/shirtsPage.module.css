@@ -17,5 +17,7 @@
 }
 
 .productCard {
+  width: 25%;
   margin: 2%;
+  padding: 0;
 }

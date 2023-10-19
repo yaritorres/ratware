@@ -21,4 +21,17 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#animated {
+  opacity: 0;
+  animation: fade-in 5s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

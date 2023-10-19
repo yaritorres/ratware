@@ -9,8 +9,8 @@ export default function Home() {
       <MainNavbar />
       <div className={styles.landing}>
         <div className={styles.welcome}>
-          <span style={{fontSize: '200px'}}> Welcome. </span>
-          <span style={{fontSize: '50px'}}> You&apos;re finally home. </span>
+          <span style={{fontSize: '200px', paddingBottom: '0'}}> Welcome. </span>
+          <span style={{fontSize: '50px'}} id={styles.animated}> Click the products tab and find true love. </span>
         </div>
       </div>
     </main>
